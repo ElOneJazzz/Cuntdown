@@ -6,14 +6,14 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: Arial;
+    font-family: Montserrat;
     justify-content: space-between;
 }
 
 #heart {
     position: relative;
-    width: 220px;
-    height: 220px;
+    width: 400px;
+    height: 400px;
     align-items: center;
 }
 
@@ -29,17 +29,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 75px;
+    font-size: 100px;
     font-family: Arial;
     font-weight: bolder;
     text-align: center;
     pointer-events: none;
 }
 
-#upper-text, #bottom-text {
+#upper-text {
     display: inline-block;
     padding: 15px 30px;
-    font-size: 18px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
     color: white;
@@ -48,37 +48,54 @@ body {
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    margin-top: 20px;
 }
 
-/* --- Стили для больших экранов --- */
-@media (min-width: 768px) {
-    #heart {
-        width: 300px; /* Увеличиваем размер сердца */
-        height: 300px;
-    }
-
-    #daysCounter {
-        font-size: 100px; /* Увеличиваем текст внутри сердца */
-    }
-
-    #upper-text, #bottom-text {
-        padding: 20px 40px; /* Увеличиваем кнопки */
-        font-size: 22px; /* Увеличиваем текст кнопок */
-    }
+#bottom-text {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: #715EC9;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-decoration: none;
 }
+/* --- Стили для разных экранов --- */
 
-@media (min-width: 1200px) {
+
+@media (max-width: 980px) {
     #heart {
-        width: 400px; /* Еще больше увеличиваем размер сердца */
-        height: 400px;
+        width: 600px; /* Еще больше увеличиваем размер сердца */
+        height: 600px;
     }
 
     #daysCounter {
         font-size: 120px; /* Еще больше увеличиваем текст внутри сердца */
     }
 
-    #upper-text, #bottom-text {
-        padding: 25px 50px; /* Еще больше увеличиваем кнопки */
-        font-size: 26px; /* Увеличиваем текст кнопок */
+    #upper-text  {
+        margin-top: 25px;
+        font-family: Montserrat;
+        padding: 35px 60px; /* Еще больше увеличиваем кнопки */
+        font-size: 45px; /* Увеличиваем текст кнопок */
     }
+    #bottom-text {
+        font-family: Montserrat;
+        padding: 35px 60px; /* Еще больше увеличиваем кнопки */
+        font-size: 55px; /* Увеличиваем текст кнопок */
+        margin-bottom: 30px;
 }
+    .montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+}
+
