@@ -114,14 +114,14 @@ body {
         padding: 20px 30px; /* Еще больше увеличиваем кнопки */
         margin-top: 10px;
         font-size: 15px; /* Увеличиваем текст кнопок */
-        border-radius: 30px;
+        border-radius: 20px;
     }
     #bottom-text {
         font-family: Montserrat;
         padding: 20px 30px; /* Еще больше увеличиваем кнопки */
         font-size: 20px; /* Увеличиваем текст кнопок */
-        margin-bottom: 15px;
-        border-radius: 30px;
+        margin-bottom: 20px;
+        border-radius: 20px;
 }
 }
 
