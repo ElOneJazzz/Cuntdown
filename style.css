@@ -88,8 +88,9 @@ body {
     #bottom-text {
         font-family: Montserrat;
         padding: 35px 60px; /* Еще больше увеличиваем кнопки */
-        font-size: 55px; /* Увеличиваем текст кнопок */
+        font-size: 45px; /* Увеличиваем текст кнопок */
         margin-bottom: 30px;
+}
 }
     .montserrat-<uniquifier> {
     font-family: "Montserrat", sans-serif;
@@ -97,5 +98,30 @@ body {
     font-weight: <weight>;
     font-style: normal;
   }
+  @media (max-width: 720px) {
+    #heart {    
+        width: 200px; /* Еще больше увеличиваем размер сердца */
+        height: 200px;
+    }
+
+    #daysCounter {
+        font-family: Montserrat;
+        font-size: 35px; /* Еще больше увеличиваем текст внутри сердца */
+    }
+
+    #upper-text  {
+        font-family: Montserrat;
+        padding: 20px 30px; /* Еще больше увеличиваем кнопки */
+        margin-top: 10px;
+        font-size: 15px; /* Увеличиваем текст кнопок */
+        border-radius: 30px;
+    }
+    #bottom-text {
+        font-family: Montserrat;
+        padding: 20px 30px; /* Еще больше увеличиваем кнопки */
+        font-size: 20px; /* Увеличиваем текст кнопок */
+        margin-bottom: 15px;
+        border-radius: 30px;
+}
 }
 
