@@ -1,7 +1,7 @@
 function calculateDays() {
     const today = new Date();
-    const targetDate = new Date(today.getFullYear(), 1, 1);
-    if (today.getMonth() > 1 || (today.getMonth() === 1 && today.getDate() > 1)) {
+    const targetDate = new Date(today.getFullYear(), 0, 26); // 0 - январь, 26 - 26 число
+    if (today > targetDate) {
         targetDate.setFullYear(today.getFullYear() + 1);
     }
     const timeDifference = targetDate - today;
