@@ -1,6 +1,6 @@
 function calculateDays() {
     const today = new Date();
-    const targetDate = new Date(today.getFullYear(), 3, 19); // 0 - январь, 26 - 26 число
+    const targetDate = new Date(today.getFullYear(), 5, 30); // 0 - январь, 26 - 26 число
     if (today > targetDate) {
         targetDate.setFullYear(today.getFullYear() + 1);
     }
